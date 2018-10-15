@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sub Camera
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -61,4 +63,10 @@ TagManager:
     locked: 0
   - name: Front
     uniqueID: 536936853
+    locked: 0
+  - name: UI
+    uniqueID: 1003701021
+    locked: 0
+  - name: FrontUI
+    uniqueID: 2101325085
     locked: 0
