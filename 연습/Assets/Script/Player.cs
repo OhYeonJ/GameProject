@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 
 //플레이어 컨트롤 스크립트. 물리 필요없음.
 
@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
 
 
     //---선언---
+
+    //public Text gameOverText;//게임 오버 텍스트.
 
     //Inspector에서 조정하기 위한 속성
     public float speed = 10.0f; // 플레이어의 속도. 필요 없으면 지우기.
@@ -34,6 +36,7 @@ public class Player : MonoBehaviour
         //초기화
         //animIndex = 0;
         //goalCheck = false; //골에 들어가지 않은 상태.
+        //gameOverText.enabled = false; //게임오버 텍스트가 보이지 않게.
 
     }
 
@@ -81,7 +84,14 @@ public class Player : MonoBehaviour
     */
     }
 
-
+    /*void IsGameOver() //게임 오버 판정 메서드.
+    {
+        if(GetComponent<Image>().fillAmount == 0.0f)
+        {
+            gameOverText.enabled = true;
+        }
+    }
+    */
 
     /*
     void OnGUI()
